@@ -1,0 +1,67 @@
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^donation/([a-zA-Z0-9_-]+)$ donation/index.php?pname=$1
+RewriteRule ^donation/pay/([a-zA-Z0-9_-]+)$ donation/payment.php?transid=$1 
+RewriteRule ^app/utilitiesconfirm/([a-zA-Z0-9_-]+)$ app/utilities-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/electricityconfirm/([a-zA-Z0-9_-]+)$ app/electricity-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/ecardconfirm/([a-zA-Z0-9_-]+)$ app/ecard-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/utilitiescomplete/([a-zA-Z0-9_-]+)$ app/utilities-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/electricitycomplete/([a-zA-Z0-9_-]+)$ app/electricity-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/ecardcomplete/([a-zA-Z0-9_-]+)$ app/ecard-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/depositcomplete/([a-zA-Z0-9_-]+)$ app/deposit-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/depositconfirm/([a-zA-Z0-9_-]+)$ app/deposit-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/cardconfirm/([a-zA-Z0-9_-]+)$ app/card-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/sendconfirm/([a-zA-Z0-9_-]+)$ app/send-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/withdrawconfirm/([a-zA-Z0-9_-]+)$ app/withdraw-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^app/withdrawcomplete/([a-zA-Z0-9_-]+)$ app/withdraw-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/sendcomplete/([a-zA-Z0-9_-]+)$ app/send-success.php?transid=$1 [NC,QSA]
+RewriteRule ^app/emailverify/([a-zA-Z0-9_-]+)$ app/email-verify.php?vcode=$1 [NC,QSA]
+RewriteRule ^app/reset/([a-zA-Z0-9_-]+)$ app/reset.php?tk=$1 
+
+
+
+RewriteRule ^customer/utilitiesconfirm/([a-zA-Z0-9_-]+)$ customer/utilities-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/electricityconfirm/([a-zA-Z0-9_-]+)$ customer/electricity-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/ecardconfirm/([a-zA-Z0-9_-]+)$ customer/ecard-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/utilitiescomplete/([a-zA-Z0-9_-]+)$ customer/utilities-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/electricitycomplete/([a-zA-Z0-9_-]+)$ customer/electricity-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/ecardcomplete/([a-zA-Z0-9_-]+)$ customer/ecard-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/depositcomplete/([a-zA-Z0-9_-]+)$ customer/deposit-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/depositconfirm/([a-zA-Z0-9_-]+)$ customer/deposit-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/cardconfirm/([a-zA-Z0-9_-]+)$ customer/card-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/sendconfirm/([a-zA-Z0-9_-]+)$ customer/send-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/withdrawconfirm/([a-zA-Z0-9_-]+)$ customer/withdraw-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/withdrawcomplete/([a-zA-Z0-9_-]+)$ customer/withdraw-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/sendcomplete/([a-zA-Z0-9_-]+)$ customer/send-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/invoice/([a-zA-Z0-9_-]+)$ customer/invoice-temp.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/receipt/([a-zA-Z0-9_-]+)$ customer/receipt-temp.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/payment/([a-zA-Z0-9_-]+)$ customer/payment-page.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/transferconfirm/([a-zA-Z0-9_-]+)$ customer/transfer-confirm.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/transfercomplete/([a-zA-Z0-9_-]+)$ customer/transfer-success.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/printcard/([a-zA-Z0-9_-]+)$ customer/print-card.php?transid=$1 [NC,QSA]
+RewriteRule ^customer/editdonation/([a-zA-Z0-9_-]+)$ customer/edit-donation.php?url=$1 [NC,QSA]
+RewriteRule ^customer/editpayment/([a-zA-Z0-9_-]+)$ customer/edit-payment.php?url=$1 [NC,QSA]
+RewriteRule ^customer/editticket/([a-zA-Z0-9_-]+)$ customer/edit-ticket.php?url=$1 [NC,QSA]
+
+RewriteRule ^payments/([a-zA-Z0-9_-]+)$ payments/index.php?url=$1 [NC,QSA]
+RewriteRule ^payments/pay/([a-zA-Z0-9_-]+)$ payments/payment.php?transid=$1 [NC,QSA]
+
+
+RewriteRule ^proceed proceeds.php [L]
+RewriteRule ^sug-due sug.php [L]
+RewriteRule ^naas-due naas.php [L]
+RewriteRule ^college-due college.php [L]
+RewriteRule ^department-due department.php [L]
+RewriteRule ^pgschool pg.php [L]
+RewriteRule ^hostel-due hostel.php [L]
+RewriteRule ^about-us about.php [L]
+RewriteRule ^contact-us contact.php [L]
+RewriteRule ^confirm/([a-zA-Z0-9_-]+)$ confirm-payment.php?transid=$1 [NC,QSA]
+RewriteRule ^success/([a-zA-Z0-9_-]+)$ success-page.php?transid=$1 [NC,QSA]
+RewriteRule ^process/([a-zA-Z0-9_-]+)$ process-page.php?transid=$1 [NC,QSA]
+
+#To avoid nasty people accessing your files
+Options -Indexes
