@@ -111,6 +111,8 @@ $countryResult = $db_handle->runQuery($query);
       <!-- End Page Title Area -->
       <?php
                include ("includes/dbcon.php");
+               
+               //$query = mysqli_query($con, "SELECT * FROM states WHERE id='$id'") or die(mysqli_error($con));
  $id = $_GET['transid'];
                            $query = mysqli_query($con, "SELECT * FROM newinvoice WHERE transid='$id'") or die(mysqli_error($con));
       $row=mysqli_fetch_array($query);
@@ -120,14 +122,17 @@ $countryResult = $db_handle->runQuery($query);
         $email = $row['email'];
         $phone = $row['phone'];
         $department = $row['department'];
-        $college = $row['college'];
-        $stype = $row['stype'];
+        $coll = $row['college'];
+        //$stype = $row['stype'];
         $transid = $row['transid'];
         $ptype  = $row['ptype'];
         $level = $row['level'];
         $pfee = $row['pfee'];
         $total = $amount + $pfee;
 
+        $dd = mysqli_query($con, "SELECT * FROM states WHERE id='$coll'") or die(mysqli_error($con));
+        $row2=mysqli_fetch_array($dd);
+        $college = $row2['name'];
                             ?>
 
       <!-- Start Contact Area -->
@@ -168,7 +173,7 @@ $countryResult = $db_handle->runQuery($query);
 
                                   <div class="col-lg-6 col-md-6">
                                       <div class="form-group" >
-                                          <input type="text" value="<?php echo $level;?> Level" class="form-control"  readonly>
+                                          <input type="text" value="<?php echo $level;?> Zone" class="form-control"  readonly>
                                       </div>
                                   </div>
 
@@ -193,13 +198,7 @@ $countryResult = $db_handle->runQuery($query);
                                       </div>
                                   </div>
                                   
-                                       <div class="col-lg-6 col-md-6 ui-widget">
-                                      <div class="form-group">
-
-                                          <input type="text" value="<?php echo $department;?>"  class="form-control"  readonly>
-
-                                      </div>
-                                  </div>
+                                       
 
 
                                   <div class="col-lg-6 col-md-6">

@@ -16,7 +16,7 @@ if(isset($_POST['login_button'])) {
    $transid=rand(100000,999999);
    $ptype = 'Zonal Due';
    $pfee = '100';
-   $amount = '4000';
+   $amount = '1000';
 
 
 	$sql = "INSERT INTO newinvoice (transid,fullname,mno,email,phone,level,college,department, amount, pfee, ptype, date_add, refcode)

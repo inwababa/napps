@@ -163,13 +163,13 @@ $countryResult = $db_handle->runQuery($query);
                                   <div class="col-lg-6 col-md-6">
                                       <div class="form-group"  >
                                           <select class="select2 form-control" name="level" required>
-                                              <option value=""> Zone</option>
-                                              <option value="100">North Central</option>
-                                              <option value="200">North East</option>
-                                              <option value="200 D.E">North West</option>
-                                              <option value="300">South East</option>
-                                              <option value="400">South South</option>
-                                              <option value="500">South West</option>
+                                              <option value="">Select Zone</option>
+                                              <option value="North Central">North Central</option>
+                                              <option value="North East">North East</option>
+                                              <option value="North West">North West</option>
+                                              <option value="South East">South East</option>
+                                              <option value="South South">South South</option>
+                                              <option value="South West">South West</option>
                                               
                                           </select>
                                       
