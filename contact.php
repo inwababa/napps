@@ -114,7 +114,7 @@
                                       <i class="fas fa-map-marker-alt"></i>
                                   </div>
                                   <span>Address</span>
-                                Federal University of Agriculture, Abeokuta
+                                Suite 2, Timeline Bazaar Plaza along Funaab Alabata road, Abeokuta Ogun State.
                               </li>
 
                               <li>

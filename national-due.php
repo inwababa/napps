@@ -160,7 +160,7 @@ $countryResult = $db_handle->runQuery($query);
 
                                   
 
-                                  <div class="col-lg-6 col-md-6">
+                                  <div class="col-lg-4 col-md-4">
                                       <div class="form-group"  >
                                           <select class="select2 form-control" name="level" required>
                                               <option value="">Select Zone</option>
@@ -178,7 +178,7 @@ $countryResult = $db_handle->runQuery($query);
 
                                  
 
-                                  <div class="col-lg-6 col-md-6">
+                                  <div class="col-lg-4 col-md-4">
                                       <div class="form-group">
                                           <select class="select2 form-control" id="country-list" name="country" onChange="getState();">
                                               <option value="" >Select State</option>
@@ -196,7 +196,7 @@ foreach ($countryResult as $country) {
 
 
                                   
-                                       <div class="col-lg-6 col-md-6">
+                                       <div class="col-lg-4 col-md-4">
                                       <div class="form-group">
                                           <select class="select2 form-control" name="state" id="state-list" required>
                                               <option value="" >Select Local Government</option>

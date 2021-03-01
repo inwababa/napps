@@ -207,7 +207,7 @@ $countryResult = $db_handle->runQuery($query);
                                       </div>
                                   </div>
 
-                                  <div class="col-lg-6 col-md-6">
+                                  <div class="col-lg-12 col-md-12">
                                       <div class="form-group">
                                           <input type="text" value="Payment For <?php echo $ptype;?>" class="form-control" readonly>
                                       </div>

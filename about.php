@@ -109,7 +109,7 @@
                           
                           <h2>What NAPPS Pay Entails?</h2>
                           <p>An e-payment portal system developed to cater for Paying of Dues (National, Zonal, State, Local Government, Ward and Unified Examination), invoice and receipt generation for the users/clients without the stress of going to the bank to make the Payment.</p>
-                          <p>NAPSS Pay makes it easier for the association's executives by giving access to the executives to view the report of the payment that has been made by the students of the respective association, request for withdrawal and so on. </p>
+                          <p>NAPSS Pay makes it easier for the executives by giving access to the executives to view the report of the payment that has been made by the NAPPS of the respective association, request for withdrawal and so on. </p>
                       </div>
                        <div class="row mt-4 mb-2">
         <div class="col-md-4">
@@ -123,14 +123,14 @@
           <div class="featured-box style-1" align="center">
             <div class="featured-box-icon text-primary"> <i class="far fa-paper-plane fa-3x"></i> </div>
             <h3>Our Mission</h3>
-            <p>To Provide the best service for our Student(s).</p>
+            <p>To Provide the best service for our User(s).</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="featured-box style-1" align="center">
             <div class="featured-box-icon text-primary"> <i class="far fa-eye fa-3x"></i> </div>
             <h3>Our Vision</h3>
-            <p>To Be The Best Payment Portal For Student(s).</p>
+            <p>To Be The Best Payment Portal For User(s).</p>
           </div>
         </div>
       </div>
